@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+        border: 5px solid red;
+      }
+      .box1 {
+        border-style: dashed;
+      }
+      .box2 {
+        border-style: dotted;
+      }
+      .box3 {
+        border-style: groove;
+        border-width: 20px;
+      }
+      .box4 {
+        background-color: aquamarine;
+        border-right: none;
+      }
+      .box5 {
+        background-color: aquamarine;
+        border: none;
+        border-left: 10px solid red;
+      }
+      .box6 {
+        border-top: 15px solid red;
+        border-right: 15px solid green;
+        border-bottom: 15px solid blue;
+        border-left: 15px solid orange;
+      }
+      .box7 {
+        height: 0;
+        width: 0;
+        border-top: 15px solid red;
+        border-right: 15px solid green;
+        border-bottom: 15px solid blue;
+        border-left: 15px solid orange;
+      }
+      .box8 {
+        height: 0;
+        width: 0;
+        border-top: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div>solid</div>
+    <div class="box1">dashed</div>
+    <div class="box2">dotted</div>
+    <div class="box3">groove</div>
+
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+  </body>
+</html>
