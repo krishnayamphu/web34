@@ -1,0 +1,23 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: blue;
+}
+
+.nav {
+  background-color: orangered;
+  text-align: center;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 15px;
+}
+.container {
+  width: 80%;
+  margin: 15px auto;
+}
