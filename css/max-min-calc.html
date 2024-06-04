@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      .box1 {
+        width: min(100%, 400px);
+        height: 100px;
+        background-color: red;
+      }
+
+      .box2 {
+        width: max(100%, 400px);
+        height: 100px;
+        background-color: blue;
+      }
+      .box3 {
+        width: calc(100% - 100px);
+        height: 100px;
+        margin: 15px auto;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </body>
+</html>
