@@ -1,0 +1,81 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  float: left;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: inline-block;
+  color: #222;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+nav ul li a i {
+  color: #3b71ca;
+}
+
+nav .form-links {
+  float: right;
+}
+.form-links a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #3b71ca;
+  padding: 5px 10px;
+}
+.form-links a:last-child {
+  background-color: #3b71ca;
+  color: white;
+  box-shadow: 0px 1px 2px #8f8f8f;
+  border-radius: 4px;
+}
+
+#hero {
+  background-color: #3b71ca;
+  height: calc(100vh - 48.4px);
+  background-image: url(images/testimonials-bg.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+#hero h1 {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 12%;
+}
+
+.hero-action {
+  width: 300px;
+  margin: 15px auto;
+  padding-top: 25px;
+}
+.hero-action a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 25px;
+}
+.hero-action a:first-child {
+  border: 2px solid white;
+  border-radius: 25px;
+}
