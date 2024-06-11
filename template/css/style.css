@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #022754;
+  --secondary-color: #d30e01;
+  --accent-color: #d30e01;
+  --body-bg: #f6f6f6;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* formatting */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+}
+.col {
+  flex-grow: 1;
+  /* padding: 0 15px; */
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+
+/* header */
+header a {
+  color: var(--primary-color);
+}
+header .brand-logo img {
+  width: 80px;
+}
+
+nav {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: var(--accent-color);
+}
+nav ul {
+  list-style: none;
+  float: left;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a i {
+  color: #3b71ca;
+}
+
+nav .form-links {
+  float: right;
+}
+nav .form-links a {
+  float: right;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* #hero */
+#hero {
+  background-color: #022754;
+  height: 268px;
+  background-image: url(../images/bg.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-overlay h1 {
+  font-size: 50px;
+  color: white;
+}
+
+#category {
+  background-color: var(--body-bg);
+  padding: 30px 0;
+}
+/* .cat-nav */
+.cat-nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.cat-nav ul {
+  list-style-type: none;
+}
+.cat-nav ul li {
+  display: inline-block;
+}
+.cat-nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.cat-nav .search-result {
+  padding: 10px;
+}
+
+/* products */
+.products .card {
+  box-shadow: 0px 0px 5px #222;
+  padding: 15px;
+  margin: 15px;
+}
+.products .product-content {
+  position: relative;
+}
+.products .product-content img {
+  position: relative;
+}
+.products .price-bar {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  justify-content: space-between;
+}
+.products .price-bar span:first-child {
+  background-color: var(--accent-color);
+  color: white;
+  display: inline-block;
+  padding: 5px;
+}
+.products h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.products h3 a {
+  text-decoration: none;
+}
