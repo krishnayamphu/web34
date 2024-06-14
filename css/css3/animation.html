@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      @keyframes changeBg {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: blue;
+          border-radius: 50%;
+        }
+      }
+
+      @keyframes move {
+        0% {
+          left: 0;
+        }
+        100% {
+          left: 60%;
+          background-color: green;
+        }
+      }
+
+      @keyframes shadow {
+        0% {
+          text-shadow: 0 0 5px red;
+        }
+        50% {
+          text-shadow: 0 0 5px blue;
+        }
+        100% {
+          text-shadow: 0 0 5px green;
+        }
+      }
+
+      @keyframes changePic {
+        0% {
+          background-image: url(p1.PNG);
+        }
+        50% {
+          background-image: url(p2.PNG);
+        }
+        100% {
+          background-image: url(p3.PNG);
+        }
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: changeBg;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        margin-top: 15px;
+        background-color: red;
+        position: relative;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        color: white;
+        animation: shadow 1s ease infinite alternate;
+      }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        background-size: cover;
+        animation: changePic 10s linear infinite;
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <h1>HELLO WORLD</h1>
+
+    <div class="box3"></div>
+  </body>
+</html>
