@@ -1,0 +1,35 @@
+:root {
+  --bs-primary: #0f172b !important;
+  --bs-accent: #fea116;
+}
+
+nav {
+  background-color: var(--bs-primary);
+}
+.navbar-brand {
+  color: var(--bs-accent);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+#hero {
+  height: 100vh;
+  background-color: var(--bs-primary);
+}
+#hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate-hero-img {
+  width: 100%;
+  animation: rotateImg 30s linear infinite;
+}
