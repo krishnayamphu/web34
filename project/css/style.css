@@ -30,6 +30,38 @@ nav {
   }
 }
 .rotate-hero-img {
-  width: 100%;
+  width: 90%;
   animation: rotateImg 30s linear infinite;
+}
+
+/* #showcase */
+#showcase i {
+  font-size: 50px;
+  color: var(--bs-accent);
+}
+#showcase .card:hover {
+  background-color: var(--bs-accent);
+  color: white;
+  transition: all 0.3s;
+}
+#showcase .card:hover i {
+  color: white;
+  transition: all 0.3s;
+}
+
+/* #about */
+#about i {
+  color: #fea116;
+}
+
+/* responsive */
+@media (max-width: 767.98px) {
+  #hero {
+    height: auto;
+  }
+  .rotate-hero-img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
 }
