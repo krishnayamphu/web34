@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -178,7 +184,10 @@
               </div>
             </div>
             <div class="col">
-              <h5>About Us</h5>
+              <div class="d-flex align-items-center title-sub-heading">
+                <h5 class="pacifico-regular mb-0">About Us</h5>
+                <span></span>
+              </div>
               <h2 class="fw-bold">
                 Welcome to <i class="fa-solid fa-utensils"></i> Restoran
               </h2>
@@ -192,6 +201,98 @@
                 Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
                 sed stet lorem sit clita duo justo magna dolore erat amet
               </p>
+
+              <div class="row">
+                <div class="col">
+                  <div class="d-flex about-highlights align-items-center">
+                    <h3>15</h3>
+                    <div>Years of<span>EXPERIENCE</span></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex about-highlights align-items-center">
+                    <h3>50</h3>
+                    <div>Popular <span>MASTER CHEFS</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="#"
+                class="btn btn-warning mt-4 rounded-0 py-3 px-5 text-white"
+                >READ MORE</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reservation">
+        <div class="container">
+          <div class="row">
+            <div class="col video-area">
+              <span>
+                <i class="fa-solid fa-play"></i>
+              </span>
+            </div>
+            <div class="col bg-theme-primary p-5">
+              <div class="d-flex align-items-center title-sub-heading">
+                <h5 class="pacifico-regular mb-0">Reservation</h5>
+                <span></span>
+              </div>
+
+              <h2 class="text-white fw-bold py-3">Book A Table Online</h2>
+
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control rounded-0 p-3"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control rounded-0 p-3"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="datetime"
+                    class="form-control rounded-0 p-3"
+                    placeholder="Date Time"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <select
+                    class="form-select rounded-0 p-3"
+                    aria-label="Default select example"
+                  >
+                    <option selected>No Of People</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea
+                    class="form-control rounded-0 p-3"
+                    placeholder="Special Request"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-warning text-white w-100 p-3 rounded-0"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
