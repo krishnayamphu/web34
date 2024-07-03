@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      input {
+        margin: 15px;
+        font-size: 32px;
+        font-weight: bold;
+        display: inline-block;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="clock" />
+    <script>
+      function myTime() {
+        let time = new Date();
+
+        let h = time.getHours(); //0-23
+        let mi = time.getMinutes();
+        let s = time.getSeconds();
+        let ms = time.getMilliseconds();
+        let data = h + ":" + mi + ":" + s + ":" + ms;
+        document.getElementById("clock").value = data;
+      }
+      setInterval("myTime()", 1);
+    </script>
+  </body>
+</html>

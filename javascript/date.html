@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      form {
+        width: 300px;
+        border: 1px solid red;
+        margin: 30px auto;
+        padding: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+      }
+      button {
+        padding: 5px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let time = new Date();
+      document.write(time + "<hr>");
+
+      let d = time.getDay() + 1; //0-6
+      let da = time.getDate();
+      let mo = time.getMonth() + 1; //0-11
+      let y = time.getFullYear();
+
+      let h = time.getHours(); //0-23
+      let mi = time.getMinutes();
+      let s = time.getSeconds();
+      let ms = time.getMilliseconds();
+      document.write(d + ", " + da + "-" + mo + "-" + y);
+      document.write("<br>" + h + ":" + mi + ":" + s + ":" + ms);
+    </script>
+  </body>
+</html>

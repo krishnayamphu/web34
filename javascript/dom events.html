@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+  </head>
+  <body>
+    <input type="text" id="tbox" oninput="changeCase()" />
+    <p>Text Length:<span id="txtlen">0</span></p>
+    <script>
+      let name = "John Doe";
+
+      function changeCase() {
+        let data = document.getElementById("tbox").value;
+        document.getElementById("tbox").value = data.toUpperCase();
+        document.getElementById("txtlen").innerHTML = data.length;
+      }
+    </script>
+  </body>
+</html>

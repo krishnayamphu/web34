@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      form {
+        width: 300px;
+        border: 1px solid red;
+        margin: 30px auto;
+        padding: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+      }
+      button {
+        padding: 5px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="return valid()">
+      <label for="username">Username</label>
+      <input type="text" id="username" />
+      <label for="password">Password</label>
+      <input type="password" id="password" />
+      <button type="submit">Login</button>
+    </form>
+    <script>
+      function valid() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        if (username == "") {
+          alert("Username required");
+          document.getElementById("username").focus();
+          return false;
+        } else if (password == "") {
+          alert("Password required");
+          document.getElementById("password").focus();
+          return false;
+        } else if (username == "admin" && password == "a123") {
+          alert("login success");
+          return true;
+        } else {
+          alert("Invalid username or password");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

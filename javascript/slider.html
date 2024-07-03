@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+  </head>
+  <body>
+    <input
+      type="range"
+      id="slider"
+      oninput="getValue()"
+      min="0"
+      max="100"
+      value="0"
+    />
+    <p>Value:<span id="txtval">0</span></p>
+    <script>
+      function getValue() {
+        let data = document.getElementById("slider").value;
+        document.getElementById("txtval").innerHTML = data;
+      }
+    </script>
+  </body>
+</html>
