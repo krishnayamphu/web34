@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: tomato;
+        padding: 10px 15px;
+      }
+      nav a {
+        text-decoration: none;
+        background-color: aliceblue;
+        padding: 5px;
+        text-align: center;
+        color: orangered;
+      }
+      .sidenav {
+        background-color: aquamarine;
+        display: none;
+        height: calc(100vh - 38px);
+      }
+      .sidenav a {
+        display: block;
+        text-decoration: none;
+        padding: 5px 30px;
+        color: black;
+      }
+      .sidenav a:hover {
+        background-color: orangered;
+      }
+      .d-none {
+        display: none;
+      }
+      .d-inline-block {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a id="menu-open" href="#">
+        <i class="fa-solid fa-bars fa-fw"></i>
+      </a>
+      <a id="menu-close" class="d-none" href="#">
+        <i class="fa-solid fa-xmark fa-fw"></i>
+      </a>
+    </nav>
+
+    <div class="sidenav">
+      <a href="">Home</a>
+      <a href="">Blog</a>
+      <a href="">Portfolio</a>
+      <a href="">About</a>
+      <a href="">Gallery</a>
+      <a href="">Contact</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#menu-open").click(function () {
+          $(this).addClass("d-none");
+          $("#menu-close").removeClass("d-none");
+          $(".sidenav").addClass("d-inline-block");
+        });
+
+        $("#menu-close").click(function () {
+          $(this).addClass("d-none");
+          $("#menu-open").removeClass("d-none");
+          $(".sidenav").removeClass("d-inline-block");
+        });
+      });
+    </script>
+  </body>
+</html>
